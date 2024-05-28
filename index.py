@@ -55,12 +55,12 @@ class Sniper(WebSocketApp):
             heartbeatInterval = int(data['d']['heartbeat_interval']) / 1000
             self.heartbeatInterval = heartbeatInterval
             Thread(target=self.heartbeatCycle).start()
-            print(f'WEBSOCKET - Heartbeat cycle started - Interval: {self.heartbeatInterval}')
+            print('WEBSOCKET - Heartbeat cycle started - Interval in seconds:', self.heartbeatInterval)
         elif data.get('t') == 'GUILD_UPDATE':
             self.claimVanity(data)
             
     def handleError(self, ws, error) -> None:
-        print(f'WEBSOCKET ERROR - Error: {error}')
+        print('WEBSOCKET ERROR - Error:', error)
         print('WEBSOCKET - Reconnecting..')
         self.close()
         self.run_forever()
@@ -89,7 +89,7 @@ class Sniper(WebSocketApp):
                     latency = time.time() - start
                     print(f"SNIPER - Target vanity is succesfully claimed in {round(latency * 1000)}ms")
                 else:
-                    print(f"SNIPER - I failed while claiming the vanity: {response.json()}")
+                    print("SNIPER - I failed while claiming the vanity:", {response.json()})
             
 if __name__ == '__main__':
     sniper = Sniper()
