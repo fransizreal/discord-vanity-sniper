@@ -89,7 +89,7 @@ class Sniper(WebSocketApp):
                     latency = time.time() - start
                     print(f"SNIPER - Target vanity is succesfully claimed in {round(latency * 1000)}ms")
                 else:
-                    print("SNIPER - I failed while claiming the vanity:", {response.json()})
+                    print("SNIPER - I failed while claiming the vanity:", response.json())
             
 if __name__ == '__main__':
     sniper = Sniper()
