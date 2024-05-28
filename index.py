@@ -8,7 +8,7 @@ from threading import Thread
 
 class Sniper(WebSocketApp):
     def __init__(self):
-        self.selfToken = ""
+        self.token = ""
         self.targetGuild = ""
         self.claimGuild = ""
         self.targetVanity = ""
@@ -28,7 +28,7 @@ class Sniper(WebSocketApp):
     def createSession(self) -> Client:
         session = Client()
         session.headers = {
-            "Authorization": self.selfToken,
+            "Authorization": self.token,
             "Content-Type": "application/json",
             "User-Agent": generate_user_agent()
         }
@@ -38,7 +38,8 @@ class Sniper(WebSocketApp):
         payload = {
             "op": 2,
             "d": {
-                "token": self.selfToken,
+                "intents": 1,
+                "token": self.token,
                 "properties": {
                     "$os": "linux",
                     "$browser": "firefox",
@@ -74,7 +75,7 @@ class Sniper(WebSocketApp):
     def heartbeatCycle(self) -> None:
         heartbeat = {
             'op': 1,
-            'd': 'null'
+            'd': 251
         }
         while True:
             self.send(json.dumps(heartbeat))
