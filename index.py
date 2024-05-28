@@ -95,7 +95,7 @@ class Sniper(WebSocketApp):
         start = time.time()
         if data['d']['guild_id'] == self.targetGuild:
             if data['d']['vanity_url_code'] != self.targetVanity:
-                response = self.session.patch(f"https://discord.com/api/v10/guilds/{self.claimGuild}", json={"code": self.targetVanity})
+                response = self.session.patch(f"https://discord.com/api/v10/guilds/{self.claimGuild}/vanity-url", json={"code": self.targetVanity})
                 if response.status_code == 200:
                     latency = time.time() - start
                     print(f"SNIPER - Target vanity is succesfully claimed in {round(latency * 1000)}ms")
