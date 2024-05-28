@@ -1,3 +1,4 @@
+import os
 import json
 import time
 
@@ -5,6 +6,9 @@ from httpx import Client
 from websocket import WebSocketApp
 from user_agent import generate_user_agent
 from threading import Thread
+
+AUTH_PAYLOAD_SENT = False
+TOTAL_HEARTBEAT_SENT = 0
 
 class Sniper(WebSocketApp):
     def __init__(self):
@@ -35,6 +39,7 @@ class Sniper(WebSocketApp):
         return session
         
     def handleOpen(self, ws) -> None:
+        global AUTH_PAYLOAD_SENT
         payload = {
             "op": 2,
             "d": {
@@ -48,6 +53,8 @@ class Sniper(WebSocketApp):
             }
         }
         self.send(json.dumps(payload))
+        AUTH_PAYLOAD_SENT = True
+        os.system(f"title [ vanity sniper ] [ total heartbeat sent: {TOTAL_HEARTBEAT_SENT} ] [ auth payload sent: {AUTH_PAYLOAD_SENT} ]")
         
     def handleMessage(self, ws, message) -> None:
         data = json.loads(message)
@@ -73,12 +80,15 @@ class Sniper(WebSocketApp):
         self.run_forever()
             
     def heartbeatCycle(self) -> None:
+        global TOTAL_HEARTBEAT_SENT
         heartbeat = {
             'op': 1,
             'd': 251
         }
         while True:
             self.send(json.dumps(heartbeat))
+            TOTAL_HEARTBEAT_SENT += 1
+            os.system(f"title [ vanity sniper ] [ total heartbeat sent: {TOTAL_HEARTBEAT_SENT} ] [ auth payload sent: {AUTH_PAYLOAD_SENT} ]")
             time.sleep(self.heartbeatInterval)
             
     def claimVanity(self, data) -> None:
@@ -93,5 +103,6 @@ class Sniper(WebSocketApp):
                     print("SNIPER - I failed while claiming the vanity:", response.json())
             
 if __name__ == '__main__':
+    os.system(f"title [ vanity sniper ] [ total heartbeat sent: {TOTAL_HEARTBEAT_SENT} ] [ auth payload sent: {AUTH_PAYLOAD_SENT} ]")
     sniper = Sniper()
     sniper.run_forever()
