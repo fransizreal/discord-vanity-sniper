@@ -1,4 +1,4 @@
 @echo off
-title vanity sniper by mesh
+title vanity sniper by mesh aka fransiz
 python index.py
 pause
