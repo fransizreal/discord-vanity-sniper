@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h3 align="center">Vanity sniper</h3>
+<h3 align="center">Discord vanity sniper</h3>
 
 <p align="center">
   Immediately claims the target vanity for your server when it becomes available.
