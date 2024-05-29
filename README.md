@@ -16,5 +16,5 @@
   <img src="https://img.shields.io/github/issues/fransizreal/discord-vanity-sniper" alt="GitHub issues">
   <img src="https://img.shields.io/github/license/fransizreal/discord-vanity-sniper" alt="GitHub license">
   <br/>
-  For any issues, DM <a href="https://discord.com/users/your_discord_user_id_here">@meshcore</a> on Discord.
+  For any issues, DM <a href="https://discord.com/users/1242526951709737050">@mahser.com</a> on Discord.
 </p>
