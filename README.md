@@ -7,7 +7,7 @@
 <h3 align="center">Discord vanity sniper</h3>
 
 <p align="center">
-  Immediately claims the target vanity for your server when it becomes available.
+  Immediately claims the target vanity for your server when it becomes available without any ratelimit risk.
   <br/>
   <br/>
   <img src="https://img.shields.io/github/stars/fransizreal/discord-vanity-sniper?style=social" alt="GitHub stars">
