@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/fransizreal/discord-vanity-sniper">
+  <a href="https://github.com/fransizreal/discord-vanity-sniper" target="_blank">
     <a href="https://freeimage.host/i/JQtzJtf"><img src="https://iili.io/JQtzJtf.png" alt="JQtzJtf.png" width="110" height="110"/></a>
   </a>
 </p>
@@ -16,5 +16,5 @@
   <img src="https://img.shields.io/github/issues/fransizreal/discord-vanity-sniper" alt="GitHub issues">
   <img src="https://img.shields.io/github/license/fransizreal/discord-vanity-sniper" alt="GitHub license">
   <br/>
-  For any issues, DM <a href="https://discord.com/users/1242526951709737050">@mahser.com</a> on Discord.
+  For any issues, DM <a href="https://discord.com/users/1242526951709737050" target="_blank">@mahser.com</a> on Discord.
 </p>
