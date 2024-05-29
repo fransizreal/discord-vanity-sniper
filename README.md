@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/Xvirus-Team/xvirus-tools">
-    <img src="[https://xvirus.lol/xicon.png](https://ibb.co/dJPDXwz)" alt="Logo" width="80" height="80">
+    <img src="https://ibb.co/dJPDXwz" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Vanity sniper</h3>
