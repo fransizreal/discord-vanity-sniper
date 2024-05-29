@@ -1,3 +1,0 @@
-httpx
-websocket-client
-user-agents
