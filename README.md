@@ -14,4 +14,5 @@
   <img src="https://img.shields.io/github/forks/fransizreal/discord-vanity-sniper?style=social" alt="GitHub forks">
   <img src="https://img.shields.io/github/watchers/fransizreal/discord-vanity-sniper?style=social" alt="GitHub watchers">
   <img src="https://img.shields.io/github/issues/fransizreal/discord-vanity-sniper" alt="GitHub issues">
+  <img src="https://img.shields.io/github/license/fransizreal/discord-vanity-sniper" alt="GitHub license">
 </p>
