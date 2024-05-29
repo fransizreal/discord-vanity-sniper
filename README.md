@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/fransizreal/discord-vanity-sniper">
-    <a href="https://freeimage.host/i/JQtzJtf"><img src="https://iili.io/JQtzJtf.png" alt="JQtzJtf.png" width="80" height="80"/></a>
+    <a href="https://freeimage.host/i/JQtzJtf"><img src="https://iili.io/JQtzJtf.png" alt="JQtzJtf.png" width="110" height="110"/></a>
   </a>
 </p>
 
