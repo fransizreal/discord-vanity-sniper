@@ -1,7 +1,6 @@
 import os
 import json
 import time
-import logging
 
 from httpx import Client
 from websocket import WebSocketApp
