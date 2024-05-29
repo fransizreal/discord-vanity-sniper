@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/Xvirus-Team/xvirus-tools">
+  <a href="https://github.com/fransizreal/discord-vanity-sniper">
     <img src="https://ibb.co/dJPDXwz" alt="Logo" width="80" height="80">
   </a>
 
