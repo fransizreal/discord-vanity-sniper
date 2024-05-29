@@ -124,6 +124,6 @@ class Sniper(WebSocketApp):
             
 if __name__ == '__main__':
     os.system("mode 100, 25")
-    os.system(f"title [ vanity sniper ] [ total heartbeat sent: {TOTAL_HEARTBEAT_SENT} ]")
+    os.system(f"title [ vanity sniper ] [ total heartbeat sent: {TOTAL_HEARTBEAT_SENT} ] [ made by @mesh aka @fransiz ]")
     sniper = Sniper()
     sniper.run_forever()
