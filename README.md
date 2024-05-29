@@ -6,7 +6,7 @@
   <h3 align="center">Vanity sniper</h3>
 
   <p align="center">
-    Immediately claims your target vanity when it is available to you own server
+  Immediately claims the target vanity for your server when it becomes available.
     <br/>
     <br/>
   </p>
