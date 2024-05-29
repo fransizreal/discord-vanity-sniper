@@ -15,4 +15,6 @@
   <img src="https://img.shields.io/github/watchers/fransizreal/discord-vanity-sniper?style=social" alt="GitHub watchers">
   <img src="https://img.shields.io/github/issues/fransizreal/discord-vanity-sniper" alt="GitHub issues">
   <img src="https://img.shields.io/github/license/fransizreal/discord-vanity-sniper" alt="GitHub license">
+  <br/>
+  For any issues, DM <a href="https://discord.com/users/your_discord_user_id_here">@meshcore</a> on Discord.
 </p>
